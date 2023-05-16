@@ -9,13 +9,16 @@ fi
 export TERM='linux'
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/will/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Load any bash aliases we have
+source "~/.bash_aliases.sh"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -23,7 +26,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Load Plugins
 plugins=(
@@ -46,7 +49,7 @@ fi
 # Aliases
 # oh-my-zsh users are encouraged to define aliases within the ZSH_CUSTOM folder
 # For a full list of active aliases, run `alias`.
-alias neofetch="neofetch --color_blocks off"
+alias neofetch="neofetch --color_blocks on"
 
 # Add PATH to pip files
 PATH=/home/will/.local/bin:$PATH

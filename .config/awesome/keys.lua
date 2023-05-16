@@ -18,8 +18,8 @@ local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 
 -- Define mod keys
-local modkey = "Mod4"
-local altkey = "Mod1"
+local modkey = "Mod4" -- Super_L or Super_R
+local altkey = "Mod1" -- Alt_L or Alt_R
 
 -- define module table
 local keys = {}
@@ -144,6 +144,13 @@ keys.globalkeys = gears.table.join(
    ),
    -- launch rofi
    awful.key({modkey}, "d",
+      function()
+         awful.spawn(apps.launcher)
+      end,
+      {description = "application launcher", group = "launcher"}
+   ),
+   -- launch rofi
+   awful.key("Menu",
       function()
          awful.spawn(apps.launcher)
       end,
