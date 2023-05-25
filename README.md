@@ -2,6 +2,7 @@
     <h1>Awesome Dotfiles</h1>
 </div>
 
+
 <div align="center">
     <h3>Pastel Theme</h3>
 </div>
