@@ -12,13 +12,13 @@ export TERM='linux'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.bin/.oh-my-zsh
 
 # Set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Load any bash aliases we have
-source "~/.bash_aliases.sh"
+source ~/.bash_aliases.sh
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
