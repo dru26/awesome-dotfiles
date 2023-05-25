@@ -52,7 +52,7 @@ fi
 alias neofetch="neofetch --color_blocks on"
 
 # Add PATH to pip files
-PATH=/home/will/.local/bin:$PATH
+PATH=$HOME/.local/bin:$PATH
 
 # Enable Vi Mode
 bindkey -v
