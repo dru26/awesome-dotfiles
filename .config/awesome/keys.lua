@@ -150,7 +150,7 @@ keys.globalkeys = gears.table.join(
       {description = "application launcher", group = "launcher"}
    ),
    -- launch rofi
-   awful.key("Menu",
+   awful.key({}, "Menu",
       function()
          awful.spawn(apps.launcher)
       end,
